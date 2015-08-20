@@ -1,5 +1,5 @@
-UTILITY PRO CHILD THEME
-http://www.carriedils.com/utility-pro/
+MEDIATION THEME
+This is a new Genesis WordPress Theme by Tara Claeys, using Carrie Dils Utility Pro Theme as a Guide
 
 REQUIREMENTS
 This theme requires the Genesis Framework 2.0 or greater. The Genesis parent theme needs to be in the wp-content/themes/ directory, but does not need to be activated.
@@ -40,12 +40,9 @@ You can find full documentation for Utility Pro at:
 
 https://store.carriedils.com/support/documentation/
 
-If you have questions or issues, please get in touch with our support team here:
-
-https://store.carriedils.com/support/
 
 PROPS
-A special thanks to Gary Jones, who audited this code (trust me, if any mistakes remain, they are mine alone - Gary did his best to set me straight).
+A special thanks to Carrie Dils, who created the basis for this theme. She thanks Gary Jones, who audited this code (trust me, if any mistakes remain, they are mine alone - Gary did his best to set me straight).
 
 I’m also deeply appreciative of Nir Rosenbaum for teaching me about issues when building themes for Right to Left (RTL) scripts as well as testing Utility Pro with an RTL language.
 
@@ -71,3 +68,4 @@ For more information on translating this theme, please check https://store.carri
 CHANGELOG
 
 See CHANGELOG.md for a list of notable changes to this theme.
+
