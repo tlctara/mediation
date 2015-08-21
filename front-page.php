@@ -105,13 +105,7 @@ function utility_pro_add_home_gallery() {
 			'after'  => '</div>',
 		)
 	);
-	genesis_widget_area(
-		'utility-home-gallery-4',
-		array(
-			'before' => '<div class="home-gallery-4 widget-area">',
-			'after'  => '</div>',
-		)
-	);
+	
 
 	genesis_structural_wrap( 'home-gallery', 'close' );
 	echo '</div>';

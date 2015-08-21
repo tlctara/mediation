@@ -36,7 +36,7 @@ function utility_pro_fonts_url() {
 	 * supported by this font, translate this to 'off'. Do not translate
 	 * into your own language.
 	 */
-	$enriqueta = _x( 'on', 'Enriqueta font: on or off', 'utility-pro' );
+	$arimo = _x( 'on', 'Arimo font: on or off', 'utility-pro' );
 
 	/*
 	 * Translators: If there are characters in your language that are not
@@ -45,15 +45,26 @@ function utility_pro_fonts_url() {
 	 */
 	$open_sans = _x( 'on', 'Open Sans font: on or off', 'utility-pro' );
 
-	if ( 'off' !== $enriqueta || 'off' !== $open_sans ) {
+	/*
+	 * Translators: If there are characters in your language that are not
+	 * supported by this font, translate this to 'off'. Do not translate
+	 * into your own language.
+	 */
+	$crimson_text = _x( 'on', 'Crimson Text font: on or off', 'utility-pro' );
+
+	if ( 'off' !== $arimo || 'off' !== $open_sans || 'off' !== $crimson_text ) {
 		$font_families = array();
 
-		if ( 'off' !== $enriqueta ) {
-			$font_families[] = 'Enriqueta:400,700';
+		if ( 'off' !== $arimo ) {
+			$font_families[] = 'Arimo:400,700';
 		}
 
 		if ( 'off' !== $open_sans ) {
 			$font_families[] = 'Open Sans:400,700';
+		}
+		
+		if ( 'off' !== $crimson_text ) {
+			$font_families[] = 'Crimson Text:400,700';
 		}
 
 		$query_args = array(

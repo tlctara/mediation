@@ -16,10 +16,6 @@
 		- Baseline Normalize
 		- Box Sizing
 		- Float Clearing
-	- Theme Colors
-		- Purple
-		- Green
-		- Red
 	- Defaults
 		- Typographical Elements
 		- Headings
@@ -306,116 +302,6 @@ input[type="search"] {
 
 /* # Variables
 ---------------------------------------------------------------------------------------------------- */
-/* # Theme Colors
----------------------------------------------------------------------------------------------------- */
-/* ##
-Color Options
-If you've chosen your favorite color scheme, you can delete the others
----------------------------------------------------------------------------------------------------- */
-/* ## Purple
---------------------------------------------- */
-.utility-pro-purple .home-gallery .fa,
-.utility-pro-purple a,
-.utility-pro-purple .entry-content a {
-  color: #339;
-}
-
-.utility-pro-purple .sticky.entry {
-  border-top-color: #339;
-}
-
-.utility-pro-purple .call-to-action-bar .button,
-.utility-pro-purple .button,
-.utility-pro-purple .entry-content a.button,
-.utility-pro-purple input[type="submit"] {
-  background: #339;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.utility-pro-purple .call-to-action-bar .button:hover,
-.utility-pro-purple .button:hover,
-.utility-pro-purple .entry-content a.button:hover,
-.utility-pro-purple input[type="submit"]:hover {
-  background: #fff;
-  border: 1px solid #339;
-  color: #339;
-}
-
-.utility-pro-purple .utility-bar,
-.utility-pro-purple .site-footer {
-  background-color: rgba(51, 51, 153, 0.8);
-}
-
-/* ## Green
---------------------------------------------- */
-.utility-pro-green .home-gallery .fa,
-.utility-pro-green a,
-.utility-pro-green .entry-content a {
-  color: #107952;
-}
-
-.utility-pro-green .sticky.entry {
-  border-top-color: #107952;
-}
-
-.utility-pro-green .call-to-action-bar .button,
-.utility-pro-green .button,
-.utility-pro-green a.button,
-.utility-pro-green input[type="submit"] {
-  background: #107952;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.utility-pro-green .call-to-action-bar .button:hover,
-.utility-pro-green .button:hover,
-.utility-pro-green .entry-content a.button:hover,
-.utility-pro-green input[type="submit"]:hover {
-  background: #fff;
-  border: 1px solid #107952;
-  color: #107952;
-}
-
-.utility-pro-green .utility-bar,
-.utility-pro-green .site-footer {
-  background-color: rgba(16, 121, 82, 0.9);
-}
-
-/* ## Red
---------------------------------------------- */
-.utility-pro-red .home-gallery .fa,
-.utility-pro-red a,
-.utility-pro-red .entry-content a {
-  color: #d3131b;
-}
-
-.utility-pro-red .sticky.entry {
-  border-top-color: #d3131b;
-}
-
-.utility-pro-red .call-to-action-bar .button,
-.utility-pro-red .button,
-.utility-pro-red a.button,
-.utility-pro-red input[type="submit"] {
-  background: #d3131b;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.utility-pro-red .call-to-action-bar .button:hover,
-.utility-pro-red .button:hover,
-.utility-pro-red .entry-content a.button:hover,
-.utility-pro-red input[type="submit"]:hover {
-  background: #fff;
-  border: 1px solid #d3131b;
-  color: #d3131b;
-}
-
-.utility-pro-red .utility-bar,
-.utility-pro-red .site-footer {
-  background-color: rgba(211, 19, 27, 0.9);
-}
 
 /* Defaults
 ---------------------------------------------------------------------------------------------------- */
@@ -426,7 +312,7 @@ Defaults
 --------------------------------------------- */
 body {
   background: #fff;
-  color: #545454;
+  color: #404041;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -460,7 +346,7 @@ textarea:focus,
 }
 
 a {
-  color: #0964dd;
+  color: #7CB2CE;
   border-bottom: 1px dotted;
   font-weight: 700;
   text-decoration: none;
@@ -472,7 +358,7 @@ a img {
 }
 
 a:hover {
-  color: #545454;
+  color: #FFAC94;
 }
 
 p {
@@ -508,7 +394,7 @@ blockquote::before {
 }
 
 pre {
-  background: #1c1c1c;
+  background: #404041;
   color: #c9c9c9;
   overflow: scroll;
   padding: 0 20px;
@@ -528,8 +414,7 @@ h3,
 h4,
 h5,
 h6 {
-  color: #1c1c1c;
-  font-family: Enriqueta, serif;
+  font-family: Arimo, sans-serif;
   font-weight: 700;
   line-height: 1.25;
   margin: 0;
@@ -538,26 +423,33 @@ h6 {
 }
 
 h1 {
-  font-size: 32px;
-}
-
-h2 {
+	color: #404041;
   font-size: 28px;
 }
 
+h2 {
+	color: #7CB2CE;
+  font-size: 24px;
+}
+
 h3 {
-  font-size: 25px;
-}
-
-h4 {
-  font-size: 22px;
-}
-
-h5 {
+	color: #404041;
   font-size: 20px;
 }
 
+h4 {
+	color: #7CB2CE;
+  font-size: 18px;
+}
+
+h5 {
+	color: #404041;
+  font-size: 16px;
+}
+
 h6 {
+	font-family: Crimson Text, serif;
+	color: #7CB2CE;
   font-size: 18px;
 }
 
@@ -601,7 +493,7 @@ textarea {
 .button,
 .entry-content a.button,
 input[type="submit"] {
-  background: #0964dd;
+  background: #7cb2ce;
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
@@ -620,7 +512,7 @@ input:focus[type="submit"],
 .button:focus,
 .entry-content a.button:focus {
   background-color: #fff;
-  color: #0964dd;
+  color: #7cb2ce;
 }
 
 .button {
@@ -631,8 +523,8 @@ input:focus[type="submit"],
 .entry-content a.button:hover,
 input:hover[type="submit"] {
   background-color: #fff;
-  border: 1px solid #0964dd;
-  color: #0964dd;
+  border: 1px solid #7cb2ce;
+  color: #7cb2ce;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -779,19 +671,29 @@ Structure and Layout
 }
 @media screen and (min-width: 1180px) {
   .wrap {
-    max-width: 1140px;
+    max-width: 1160px;
     padding: 0;
   }
 }
-
+@media screen and (min-width: 1180px) {
+  .wrap {
+    max-width: 1160px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .wrap {
+    max-width: 1380px;
+    padding: 0;
+  }
+}
 .site-inner {
-  background: whitesmoke;
-  padding-top: 40px;
+  background: #D8E8F0;
 }
 
 .utility-landing .site-container {
   margin: 40px auto;
-  max-width: 960px;
+  max-width: 1200px;
 }
 
 /* Content & Primary Sidebar
@@ -838,13 +740,12 @@ Sidebar
 
 .sidebar .widget {
   background: #fff;
-  border-top: 1px solid #1c1c1c;
   margin-bottom: 40px;
   padding: 40px;
 }
 
 .sidebar .widget-wrap {
-  border-top: 5px solid #1c1c1c;
+  border-top: 5px solid #404041;
   margin-left: 4px;
 }
 
@@ -1206,6 +1107,17 @@ img.alignnone,
   margin: 0 auto;
 }
 
+/* Genesis Slider
+------------------------------------------------------------ */
+
+#genesis-responsive-slider {
+	background-color: #fff;
+	border: none!important;
+	margin: 0 auto;
+	padding: 0!importantm;
+	position: relative;
+}
+
 /* Genesis
 --------------------------------------------- */
 .breadcrumb {
@@ -1215,7 +1127,7 @@ img.alignnone,
 .author-box,
 .archive-description {
   background-color: #ebebeb;
-  color: #1c1c1c;
+  color: #404041;
   margin-bottom: 40px;
   padding: 40px;
 }
@@ -1242,18 +1154,28 @@ Widgets
 /* Utility Bar
 --------------------------------------------- */
 .utility-bar {
-  background-color: rgba(9, 100, 221, 0.9);
-  border-bottom: 1px solid #d9d9d9;
-  color: #fff;
+  background-color: #b0d0e1;
+  color: #666;
   font-size: 14px;
+  font-style: italic;
   margin: 0 auto;
   padding: 10px 0;
   text-align: center;
   width: 100%;
 }
 
+
 .utility-bar a {
-  color: #fff;
+  	font-family: Crimson Text, serif;
+	padding: 5px 10px;	
+	background: #93b2c2;
+	color:#FFE294;
+	text-decoration: none;
+	border: none;
+	font-size: 1.1em;
+  	font-weight: normal;
+  	margin-right:20px;
+;
 }
 
 .utility-bar a:hover {
@@ -1274,31 +1196,38 @@ Widgets
 /* Home Welcome
 --------------------------------------------- */
 .home-welcome {
-  background-color: rgba(51, 51, 51, 0.8);
-  padding: 40px 0;
+  background-color: transparent;
+  padding:2% 0 4% 0;
   text-align: center;
+  max-height: 350px;
 }
 
 .home-welcome .widgettitle {
   color: #fff;
   text-transform: none;
 }
-@media screen and (min-width: 480px) {
-  .home-welcome .widgettitle {
-    font-size: 80px;
-  }
-}
-
 .home-welcome p,
 .home-welcome .textwidget {
-  color: #ebebeb;
+  color: #286586;
 }
 @media screen and (min-width: 480px) {
+	.home-welcome .widgettitle {
+    font-size: 80px;
+}
+.home-welcome .textwidget {
+}
   .home-welcome p,
   .home-welcome .textwidget {
-    font-size: 40px;
+    font-size: 30px;
     line-height: normal;
-    margin-bottom: 34px;
+    margin-bottom: 5px;
+  }
+  .home-welcome .textwidget .line {
+  	width: 35%;
+  	border-bottom: 2px #286586 solid;
+  	height: 3px;
+  	text-align: center;
+  	margin: 0 auto 5px auto;
   }
 }
 
@@ -1310,7 +1239,7 @@ Widgets
 }
 
 .home-gallery .fa {
-  color: #0964dd;
+  color: #7cb2ce;
 }
 
 .home-gallery .widget {
@@ -1319,16 +1248,22 @@ Widgets
 
 .home-gallery-1,
 .home-gallery-2,
-.home-gallery-3,
-.home-gallery-4 {
+.home-gallery-3 {
   text-align: center;
   width: 100%;
 }
+
+.home-gallery-1 a,
+.home-gallery-2 a,
+.home-gallery-3 a {
+ text-decoration: none;
+ border: none;
+}
+
 @media screen and (min-width: 810px) {
   .home-gallery-1,
   .home-gallery-2,
-  .home-gallery-3,
-  .home-gallery-4 {
+  .home-gallery-3 {
     float: left;
     width: 50%;
   }
@@ -1336,22 +1271,65 @@ Widgets
 @media screen and (min-width: 1023px) {
   .home-gallery-1,
   .home-gallery-2,
-  .home-gallery-3,
-  .home-gallery-4 {
+  .home-gallery-3 {
     float: left;
-    width: 25%;
+    width: 33%;
   }
 }
 
 /* Call to Action
 --------------------------------------------- */
 .call-to-action-bar {
-  background: #333333;
-  background: rgba(51, 51, 51, 0.8);
+  background: url(http://www.mediationfromtheheart.dev/wp-content/uploads/2015/08/forkpath.jpg) no-repeat bottom center;
+  background-color: #d8e8f0;
+  /*background: rgba(51, 51, 51, 0.8);*/
   color: #fff;
   padding: 40px 0;
   text-align: center;
+  height: 450px;
 }
+.call-to-action-bar .textwidget .widgetquote {
+	background: rgba(255,255,255,0.75);
+	color: #7CB2CE;
+	font-family: Crimson Text, serif;
+	font-style: italic;
+	text-align: center;
+	padding: 10px 10px 5px 10px;
+	width: 50%;
+	margin: 0 auto;
+	font-size: .9em;
+	line-height: 1.3;
+	margin-bottom: 30px;
+}
+.call-to-action-bar .textwidget {
+	color: #fff;
+	background: transparent;
+	font-family: Arimo, sans-serif;
+	font-style: bold;
+	text-align: center;
+	font-size: 1.5em;
+}
+.call-to-action-bar .textwidget .cta-button {
+	text-align: center;
+	margin: 0 auto;
+}
+
+.call-to-action-bar .textwidget .cta-button a {
+	background: rgba(255,255,255,0.75);
+	border: #d8e8f0 solid 2px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.call-to-action-bar .textwidget .cta-button a:hover {
+	background: #fff;
+	border: #d8e8f0 solid 2px;
+	padding: 10px;
+	text-align: center;
+	margin: 0 auto;
+}
+
 @media screen and (min-width: 1023px) {
   .call-to-action-bar {
     text-align: left;
@@ -1413,7 +1391,7 @@ Widgets
 Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background: #1c1c1c;
+  background: #404041;
   color: #fff;
   padding: 40px 0;
 }
@@ -1519,7 +1497,7 @@ li a .fa {
 }
 
 .sidebar .widget.enews-widget {
-  background-color: #1c1c1c;
+  background-color: #404041;
   border-top: 1px solid #fff;
 }
 
@@ -1570,12 +1548,14 @@ div.gform_wrapper textarea:focus {
 Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background: #fff;
-  border-bottom: 1px solid #d9d9d9;
+  background: -webkit-linear-gradient(left, #fff , #d8e8f0); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #d8e8f0, #fff); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #d8e8f0, #fff)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #d8e8f0, #fff)); /* Standard syntax */;
 }
 
 .site-header .wrap {
-  padding: 20px 0;
+  padding: 20px 0 5px 0;
 }
 
 /* Title Area
@@ -1603,8 +1583,8 @@ Site Header
 .site-title a,
 .site-title a:hover {
   border: 0;
-  color: #1c1c1c;
-  font-family: Enriqueta, serif;
+  color: #404041;
+  font-family: Arimo, serif;
   font-size: 28px;
 }
 
@@ -1632,8 +1612,10 @@ Site Header
 .header-image .site-title > a {
   background: url(images/logo.png) no-repeat center;
   float: left;
-  min-height: 60px;
+  min-height: 110px;
   width: 100%;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 @media screen and (min-width: 1023px) {
   .header-image .site-title > a {
@@ -1647,11 +1629,21 @@ Site Header
   float: right;
   text-align: center;
   width: 100%;
+  line-height: 1.3;
+  color: #3D7492;
+
+}
+.site-header .widget-area .widgettitle {
+	text-transform: none;
+	margin-bottom: 5px;
+	font-size: 1.4em;
+	color: #3D7492;
 }
 @media screen and (min-width: 1023px) {
   .site-header .widget-area {
     text-align: right;
     width: 50%;
+    padding-right: 10%;
   }
 }
 
@@ -1915,15 +1907,18 @@ Content Area
 --------------------------------------------- */
 .entry-title {
   margin-bottom: 40px;
+  font-weight: 400;
+  text-align: center;
 }
 
 .entry-title a {
   border: 0;
-  color: #1c1c1c;
+  color: #404041;
+  font-weight: 400;
 }
 
 .entry-title a:hover {
-  color: #545454;
+  color: #FFAC94;
 }
 
 .widgettitle {
@@ -1934,34 +1929,33 @@ Content Area
 
 .sidebar .widgettitle a {
   border: 0;
-  color: #1c1c1c;
+  color: #404041;
 }
 
 .archive-title {
-  color: #1c1c1c;
+  color: #404041;
   margin-bottom: 24px;
 }
 
 /* Entries
 --------------------------------------------- */
 .sticky.entry {
-  border-top: 1px solid #0964dd;
+  border-top: 1px solid #7cb2ce;
 }
 
 .entry {
   background: #fff;
-  border-top: 1px solid #1c1c1c;
   margin-bottom: 40px;
   padding: 40px 40px 24px;
   word-wrap: break-word;
 }
 
 .entry-content a {
-  color: #0964dd;
+  color: #7cb2ce;
 }
 
 .entry-content a:hover {
-  color: #1c1c1c;
+  color: #404041;
 }
 
 .entry-content .attachment a,
@@ -2006,7 +2000,7 @@ Content Area
 }
 
 .entry-content code {
-  background-color: #1c1c1c;
+  background-color: #404041;
   color: #d9d9d9;
 }
 
@@ -2059,7 +2053,7 @@ Content Area
 
 .pagination .nav-links a,
 .pagination .nav-links .current {
-  background: #1c1c1c;
+  background: #404041;
   border: 1px solid #fff;
   color: #fff;
   cursor: pointer;
@@ -2069,8 +2063,8 @@ Content Area
 
 .pagination .nav-links a:hover {
   background: #fff;
-  border: 1px solid #1c1c1c;
-  color: #1c1c1c;
+  border: 1px solid #404041;
+  color: #404041;
 }
 
 .pagination .nav-links .current {
@@ -2142,15 +2136,15 @@ p.form-submit,
 Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: rgba(9, 100, 221, 0.9);
-  color: #fff;
+  background-color: #d8e8f0;
+  color: #404041;
   font-size: 14px;
   padding: 40px 0;
   text-align: center;
 }
 
 .site-footer a {
-  color: #fff;
+  color: #7CB2CE;
 }
 
 .site-footer a:hover {
@@ -2212,7 +2206,7 @@ Accessibility Extras - Taken from the Leiden theme & Genesis Accessible plugin (
 
 /* Display outline on focus */
 :focus {
-  color: #1c1c1c;
+  color: #404041;
   outline: #a1a1a1 dotted thin;
 }
 
