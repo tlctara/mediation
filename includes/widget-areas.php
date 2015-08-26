@@ -43,14 +43,19 @@ function utility_pro_register_widget_areas() {
 			'description' => sprintf( _x( 'Home Gallery %d widget area on home page.', 'Description of widget area', 'utility-pro' ), 3 ),
 		),
 		array(
-			'id'          => 'utility-home-gallery-4',
-			'name'        => sprintf( _x( 'Home Gallery %d', 'Group of Home Gallery widget areas', 'utility-pro' ), 4 ),
-			'description' => sprintf( _x( 'Home Gallery %d widget area on home page.', 'Description of widget area', 'utility-pro' ), 4 ),
-		),
-		array(
 			'id'          => 'utility-call-to-action',
 			'name'        => __( 'Call to Action', 'utility-pro' ),
 			'description' => __( 'This is the Call to Action section on the home page.', 'utility-pro' ),
+		),
+		array(
+			'id'          => 'utility-before-bottom-widget',
+			'name'        => __( 'Before Bottom Widget', 'utility-pro' ),
+			'description' => __( 'This is the Area Above the Bottom Widget section on the home page.', 'utility-pro' ),
+		),
+		array(
+			'id'          => 'utility-bottom-widget',
+			'name'        => __( 'Bottom Widget', 'utility-pro' ),
+			'description' => __( 'This is the Bottom Widget section on the home page.', 'utility-pro' ),
 		),
 	);
 

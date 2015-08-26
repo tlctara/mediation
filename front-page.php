@@ -20,6 +20,8 @@ function utility_pro_homepage_setup() {
 		'home_welcome' 	   => is_active_sidebar( 'utility-home-welcome' ),
 		'home_gallery_1'   => is_active_sidebar( 'utility-home-gallery-1' ),
 		'call_to_action'   => is_active_sidebar( 'utility-call-to-action' ),
+		'before_bottom_widget'   => is_active_sidebar( 'utility-before-bottom-widget' ),
+		'bottom_widget'   => is_active_sidebar( 'utility-bottom-widget' ),
 	);
 
 	// Return early if no sidebars are active.
@@ -46,6 +48,14 @@ function utility_pro_homepage_setup() {
 		// Add call to action area if "Call to Action" widget area is active.
 		if ( $home_sidebars['call_to_action'] ) {
 			add_action( 'genesis_after_header', 'utility_pro_add_call_to_action' );
+		}
+		// Add call to action area if "Before Bottom" widget area is active.
+		if ( $home_sidebars['before_bottom_widget'] ) {
+			add_action( 'genesis_after_header', 'utility_pro_add_before_bottom_widget' );
+		}
+		// Add call to action area if "Bottom Widget" widget area is active.
+		if ( $home_sidebars['bottom_widget'] ) {
+			add_action( 'genesis_after_header', 'utility_pro_add_bottom_widget' );
 		}
 	}
 
@@ -128,13 +138,39 @@ function utility_pro_add_call_to_action() {
 }
 
 /**
- * Display latest posts instead of static page.
+ * Display content for the "Before Bottom" section.
  *
  * @since 1.0.0
  */
+function utility_pro_add_before_bottom_widget() {
+
+	genesis_widget_area(
+		'utility-before-bottom-widget',
+		array(
+			'before' => '<div class="before-bottom-widget"><div class="wrap">',
+			'after' => '</div></div>',
+		)
+	);
+}
+/**
+ * Display content for the "Bottom" section.
+ *
+ * @since 1.0.0
+ */
+function utility_pro_add_bottom_widget() {
+
+	genesis_widget_area(
+		'utility-bottom-widget',
+		array(
+			'before' => '<div class="bottom-widget"><div class="wrap">',
+			'after' => '</div></div>',
+		)
+	);
+}
+
+// Display latest posts instead of static page
 function utility_pro_front_loop() {
-	global $query_args;
-	genesis_custom_loop( wp_parse_args( $query_args, array( 'post_type' => 'post', 'paged' => get_query_var( 'page' ) ) ) );
+	
 }
 
 genesis();
