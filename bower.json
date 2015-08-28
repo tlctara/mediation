@@ -1,0 +1,20 @@
+{
+	"name" : "mediation",
+	"version" : "1.1.0",
+	"homepage" : "https://github.com/tlctara/mediation.git",
+	"authors" : [
+	"Tara Claeys <tara@designtlc.com>," "Carrie Dils <carrie@carriedils.com>",
+	],
+	"description": "Genesis child theme",
+	"license" : "GPL-2.0+",
+	"private" : "true",
+	"ignore": [
+		"**/.*",
+		"node-modules",
+		"bower_components"
+	],
+	"devDependencies" : {
+			"bourbon": "~4.2.3",
+			"neat": "~1.7.2"
+	}
+}
