@@ -1,0 +1,11 @@
+{
+  "name" : "mediation",
+  "description" : "WordPress Genesis Theme.",
+  "homepage" : "http://mediationfromtheheart.com",
+  "keywords" : [],
+  "author" : "Tara Claeys <tara@designtlc.com>",
+  "contributors" : [],
+  "dependencies" : [],
+  "repository" : {"type": "git", "url": "https://github.com/tlctara/mediation.git"},
+  "version" : "1.0"
+}

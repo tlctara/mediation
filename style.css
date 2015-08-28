@@ -770,6 +770,7 @@ Sidebar
 /* Column Classes
 Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
 --------------------------------------------- */
+
 @media screen and (min-width: 810px) {
   .one-half,
   .three-sixths,
@@ -1242,7 +1243,7 @@ Widgets
 /* Home Welcome
 --------------------------------------------- */
 .home-welcome {
-  background-color: transparent;
+  background-color: rgba(255,255,255,0.7);
   padding:2% 0 4% 0;
   text-align: center;
   height: 350px;
@@ -1279,7 +1280,7 @@ Widgets
 }
 
 .home-welcome .slide-excerpt .slide-title {
-  background: rgba(255,255,255,0.5);
+  /*background: rgba(255,255,255,0.5);*/
   color: #286586;
   padding: 10px;
   font-size: 30px;
@@ -2089,6 +2090,12 @@ Content Area
 .archive-title {
   color: #404041;
   margin-bottom: 24px;
+}
+
+/*Text Styles*/
+.boldhead {
+  color: #02539b;
+  font-weight: bold;
 }
 
 /* Entries
