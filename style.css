@@ -347,7 +347,7 @@ textarea:focus,
 
 a {
   color: #7CB2CE;
-  border-bottom: 1px dotted;
+ /* border-bottom: 1px dotted;*/
   font-weight: 700;
   text-decoration: none;
   word-wrap: break-word;
@@ -569,11 +569,36 @@ input[type="search"]::-webkit-search-results-button {
 table {
   margin-bottom: 40px;
   max-width: 100%;
+  border: 5px solid #d8e8f0;
 }
 
 th {
   text-align: left;
+  text-transform: uppercase;
+  color: #3d7492;
+  font-weight: 700;
+  border-bottom: 2px solid #d8e8f0;
+  font-size: 1.1em;
+  padding: 20px 0 20px 10px;
 }
+
+tr {
+  background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #fff7e2;
+}
+td {
+  padding: 8px 25px 8px 15px;
+  color: #404041;
+  border-right: 2px solid #d8e8f0;
+}
+td.first {
+  padding-left: 20px;
+  color: #3d7492;
+  font-weight: 700;
+  }
 
 .table {
   width: 100%;
@@ -790,7 +815,7 @@ Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
   .two-sixths {
     float: left;
     display: block;
-    margin-right: 2.35765%;
+    margin-right: 1.35765%;
     width: 31.76157%;
   }
   .one-third:last-child,
@@ -1325,6 +1350,9 @@ Widgets
 .home-gallery .widget {
   padding: 0 20px;
 }
+.home-gallery .widgettitle {
+  margin-left: 10px;
+}
 
 .home-gallery-1,
 .home-gallery-2,
@@ -1343,6 +1371,16 @@ Widgets
 .homewidgettext {
    padding: 0 5% 0 15%;
   text-align: left;
+}
+
+.textwidget .learn-button {
+  background: #7CB2CE;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+.textwidget .learn-button:hover {
+  color: #404041;
 }
 
 @media screen and (min-width: 810px) {
@@ -1518,6 +1556,18 @@ Widgets
 }
 .beyond-button a {
   color: #404041;
+}
+
+
+/* Social Stickers plugin
+--------------------------------------------- */
+.social_stickers_pro_widget img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 18px;
+}
+#text-3 p {
+  margin-bottom: 0;
 }
 
 /* Featured Page and Featured Post
@@ -1853,7 +1903,7 @@ Site Navigation
 }
 
 .genesis-nav-menu a {
-  color: #7CB2CE;
+  color: #3D7492;
   display: inline-block;
   font-weight: 400;
   letter-spacing: 1px;
@@ -1865,7 +1915,7 @@ Site Navigation
 .genesis-nav-menu a:hover,
 .genesis-nav-menu .current-menu-item > a,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: #D8E8F0;
+  color: #404041;
 }
 
 .genesis-nav-menu .sub-menu a:hover,
@@ -1874,7 +1924,7 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu .current-menu-item > a {
-  color: #D8E8F0;
+  color: #404041;
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -1896,7 +1946,7 @@ Site Navigation
 }
 
 .genesis-nav-menu .sub-menu {
-  background-color: #121212;
+  background-color: #d8e8f0;
   clear: both;
   display: none;
   opacity: 1;
@@ -2073,7 +2123,7 @@ Content Area
 }
 
 .entry-title a:hover {
-  color: #FFAC94;
+  color: #FFF;
 }
 
 .widgettitle {
@@ -2232,7 +2282,7 @@ Content Area
 .pagination .nav-links .current {
   background: #545454;
   border: 1px solid #fff;
-  color: #fff;
+  color: #404041;
   cursor: none;
 }
 

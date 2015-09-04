@@ -173,7 +173,7 @@ add_filter( 'genesis_footer_creds_text', 'utility_pro_footer_creds' );
  */
 function utility_pro_footer_creds( $creds ) {
 
-	return '[footer_copyright first="2015"] Charlie Rowan, Mediation from the Heart <a href="designtlc.com">Design TLC</a>.<div class="disclaimer"><p>DISCLAMER: Although I am a licensed attorney, the information at this website and Mediation From The Heart® services are neither legal advice nor legal services. No attorney-client relationship with me is created in connection with the provision of these services.</p><p>The content of this website is neither legal advice nor legal information. Use of this website, including contacting Charlie Rowan or using the Mediation From The Heart® process, does not create an attorney-client relationship. If you contact me through links or features of this website or send me electronic communications, your communication will not create an attorney-client relationship, will not be treated as privileged, and will not be assured of confidentiality. You should not send sensitive or confidential information via this website or email. As the Internet is not necessarily a secure environment, it is possible that your message will be intercepted and read by persons without your knowledge or consent.</p></div>';
+	return '[footer_copyright first="2015"] Charlie Rowan, Mediation from the Heart <br/><img src="wp-content/themes/mediation/images/IACP-Logo.png" height="100px" width="125px"><br/>Website Design by <a href="designtlc.com">Design TLC</a>.<div class="disclaimer"><p>DISCLAMER: Although I am a licensed attorney, the information at this website and Mediation From The Heart® services are neither legal advice nor legal services. No attorney-client relationship with me is created in connection with the provision of these services.</p><p>The content of this website is neither legal advice nor legal information. Use of this website, including contacting Charlie Rowan or using the Mediation From The Heart® process, does not create an attorney-client relationship. If you contact me through links or features of this website or send me electronic communications, your communication will not create an attorney-client relationship, will not be treated as privileged, and will not be assured of confidentiality. You should not send sensitive or confidential information via this website or email. As the Internet is not necessarily a secure environment, it is possible that your message will be intercepted and read by persons without your knowledge or consent.</p></div>';
 }
 
 add_filter( 'genesis_author_box_gravatar_size', 'utility_pro_author_box_gravatar_size' );
@@ -201,3 +201,21 @@ include get_stylesheet_directory() . '/includes/enqueue-assets.php';
 
 // Miscellaenous functions used in theme configuration.
 include get_stylesheet_directory() . '/includes/theme-config.php';
+
+
+add_action( 'pre_get_posts', 'be_exclude_category_from_blog' );
+/**
+ * Exclude Category from Blog
+ * 
+ * @author Bill Erickson
+ * @link http://www.billerickson.net/customize-the-wordpress-query/
+ * @param object $query data
+ *
+ */
+function be_exclude_category_from_blog( $query ) {
+	
+	if( $query->is_main_query() && $query->is_home() ) {
+		$query->set( 'cat', '-2 -3' );
+	}
+
+}
