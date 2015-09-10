@@ -3,7 +3,7 @@
 	"version" : "1.1.0",
 	"homepage" : "https://github.com/tlctara/mediation.git",
 	"authors" : [
-	"Tara Claeys <tara@designtlc.com>," "Carrie Dils <carrie@carriedils.com>",
+	"Tara Claeys <tara@designtlc.com>", "Carrie Dils <carrie@carriedils.com>"
 	],
 	"description": "Genesis child theme",
 	"license" : "GPL-2.0+",
