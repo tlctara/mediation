@@ -48,7 +48,7 @@ module.exports = function(grunt) {
 					'sourcemap=none': true
 				},
 				files: {
-					'style.css' : 'assets/scss/style.scss'
+					'new.css' : 'assets/scss/style.scss'
 				}
 			}
 		},
